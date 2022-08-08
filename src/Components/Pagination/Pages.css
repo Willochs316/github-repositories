@@ -1,0 +1,15 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #C1C1C1;
+  background-color: #C1C1C1;
+}
+
+.page-container .page-btn {
+  border: 0.2px solid  #efefef;
+  padding: 5px;
+  outline: 0;
+  width: 100%;
+  background-color: #C1C1C1;
+}
