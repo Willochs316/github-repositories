@@ -15,7 +15,7 @@ This project periodically fetches data from GitHub's API to identify and compile
 
 ## How to Use
 
-1. **Explore Repositories**: Visit the [web interface](https://your-web-interface-link.com) to browse through the most starred repositories. You can filter by the top five users.
+1. **Explore Repositories**: Visit the [web interface](https://github-repositories101.netlify.app/) to browse through the most starred repositories. You can filter by the top five users.
 
 2. **Contribute**: If you want to explore the repository data locally or contribute to the project, feel free to open a pull request with the necessary information.
 
