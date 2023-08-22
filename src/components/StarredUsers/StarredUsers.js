@@ -15,7 +15,7 @@ const StarredUsers = ({ githubResponse, isLoading, loadMore }) => {
       <CircularProgress />
     </Box>
   ) : (
-    <div className='starred-users mt-3'>
+    <div className='starred-users'>
       <SearchBar githubResponse={githubResponse} />
 
       <div className='starred-users-container'>

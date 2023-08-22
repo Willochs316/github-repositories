@@ -55,7 +55,7 @@
   display: none;
 }
 
-.githubResponseData .githubItems {
+.githubResponseData .starred-user-items {
   width: 100%;
   height: 40px;
   display: flex;
@@ -64,7 +64,7 @@
   font-size: 14px;
 }
 
-.githubItems p {
+.starred-user-items p {
   margin-left: 10px;
 }
 
@@ -136,7 +136,7 @@ a:hover {
   .githubResponseData::-webkit-scrollbar {
     display: none;
   }
-  .githubResponseData .githubItems {
+  .githubResponseData .starred-user-items {
     width: 100%;
     height: 40px;
     display: flex;
@@ -144,7 +144,7 @@ a:hover {
     color: white;
     font-size: 14px;
   }
-  .githubItems p {
+  .starred-user-items p {
     margin-left: 10px;
   }
   a {

@@ -47,7 +47,7 @@ const SearchBar = ({ githubResponse }) => {
         <div className='githubResponseData'>
           {filteredItems.slice(0, 5).map((item) => (
             <a
-              className='githubItems'
+              className='starred-user-items'
               href={item.html_url}
               target='true'
               key={item.id}
