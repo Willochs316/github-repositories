@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import StarredUsers from './components/StarredUsers/StarredUsers';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import StarredUsers from "./components/StarredUsers/StarredUsers";
+import "./App.css";
 
 const App = () => {
   const [githubResponse, setGithubResponse] = useState({
@@ -12,7 +12,6 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(0);
 
   useEffect(() => {
     try {
@@ -42,8 +41,8 @@ const App = () => {
   return (
     <StarredUsers
       isLoading={isLoading}
+      isError={isError}
       githubResponse={githubResponse}
-      totalPages={totalPages}
       loadMore={loadMore}
     />
   );

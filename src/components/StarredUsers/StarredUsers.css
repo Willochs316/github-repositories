@@ -1,8 +1,13 @@
+.error-message {
+  color: red;
+}
+
 .progressBar {
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  margin-top: 44px;
 }
 
 .starred-users {
@@ -25,8 +30,6 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  /* padding: 0px 20px; */
-  /* max-width: 960px; */
   margin: 20px auto 0 auto;
   height: 100%;
   border: 0 solid;
@@ -54,34 +57,18 @@
   align-items: center;
   justify-content: center;
   flex-basis: 100%;
+  padding: 0 12px;
 }
 
 .starred-users
   .starred-users-container
   .starred-user-content
   .user-profile-container
-  .user-profile-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  border: 0 solid;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 8px;
-}
-
-.starred-users
-  .starred-users-container
-  .starred-user-content
-  .user-profile-container
-  .user-profile-image
   .user-icon {
   width: 100px;
   height: 100px;
-  padding: 12px;
   padding-right: 12px;
-  padding-top: 8px;
+  object-fit: contain;
 }
 
 .starred-users
@@ -94,10 +81,10 @@
   flex-direction: column;
   justify-content: center;
   width: 838px;
-  height: 110px;
   font-size: 16px;
   flex: 1 1 auto;
   color: #e5e7eb;
+  line-height: 1.4;
 }
 
 .starred-users
@@ -105,23 +92,10 @@
   .starred-user-content
   .user-profile-container
   .starred-user-information
-  .starred-user-header-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  margin-top: 5.6px;
-  margin-bottom: 2.4px;
-}
-
-.starred-users
-  .starred-users-container
-  .starred-user-content
-  .user-profile-container
-  .starred-user-information
-  .starred-user-header-container
   .starred-user-header {
+  width: 100%;
   font-size: 16px;
+  font-weight: bolder;
   color: #e5e7eb;
 }
 
@@ -131,24 +105,12 @@
   .user-profile-container
   .starred-user-information
   .starred-user-details {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  font-size: 14px;
   flex-wrap: wrap;
   margin: 0;
   margin-bottom: 3.2px;
   margin-top: 1.6px;
   width: 100%;
-}
-
-.starred-users
-  .starred-users-container
-  .starred-user-content
-  .user-profile-container
-  .starred-user-information
-  .starred-user-details
-  .starred-user-detail-content {
-  font-size: 12px;
 }
 
 .starred-users
@@ -235,253 +197,4 @@
 }
 
 @media only screen and (max-width: 375px) {
-  .progressBar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  .starred-users {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 321px;
-    height: 100%;
-    overflow: hidden;
-    margin-top: 25px;
-    margin: 0 auto 0 auto;
-  }
-  .starred-users .starred-users::-webkit-scrollbar {
-    display: none;
-  }
-  .starred-users .starred-users-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0px 20px;
-    margin: 20px auto 0 auto;
-    height: 100%;
-    border: 0 solid;
-    max-width: 321px;
-  }
-  .starred-users .starred-users-container .starred-user-content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 12px;
-    border: 1px solid #e5e7eb;
-    border-radius: 0.375rem;
-    border-width: 1px;
-    margin-bottom: 0.75rem;
-    padding: 0.5rem 0.75rem;
-    max-width: 320px;
-    height: 150px;
-  }
-  .starred-users
-    .starred-users-container
-    .starred-user-content
-    .user-profile-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 320px;
-  }
-  .starred-users
-    .starred-users-container
-    .starred-user-content
-    .user-profile-container
-    .user-profile-image {
-    display: none;
-  }
-  .starred-users
-    .starred-users-container
-    .starred-user-content
-    .user-profile-container
-    .starred-user-information {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 300px;
-    height: 100%;
-    font-size: 10px;
-    flex: 1 1 auto;
-    color: #e5e7eb;
-  }
-  .starred-users
-    .starred-users-container
-    .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-header-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    height: 25px;
-    margin-top: 0;
-    white-space: nowrap;
-    overflow-x: auto;
-  }
-  .starred-users
-    .starred-users-container
-    .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-header-container
-    .starred-user-header-container::-webkit-scrollbar {
-    display: none;
-    scrollbar-width: none;
-  }
-  .starred-users
-    .starred-users-container
-    .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-header-container
-    .starred-user-header {
-    font-size: 14px;
-    color: #e5e7eb;
-  }
-  .starred-users
-    .starred-users-container
-    .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-details {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0;
-    margin-bottom: 0.2rem;
-    margin-top: 0.1rem;
-    width: 100%;
-    height: 40px;
-    white-space: nowrap;
-    overflow-x: auto;
-  }
-  .starred-users
-    .starred-users-container
-    .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-details
-    .starred-user-details::-webkit-scrollbar {
-    display: none;
-    scrollbar-width: none;
-  }
-  .starred-users
-    .starred-users-container
-    .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-details
-    .starred-user-detail-content {
-    font-size: 10px;
-    font-size: 500;
-  }
-  .starred-users
-    .starred-users-container
-    .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate {
-    display: flex;
-    align-items: center;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    margin-bottom: 0.5rem;
-    margin-top: 2rem;
-    font-size: 10px;
-    line-height: 1.25rem;
-    border: 0;
-  }
-  .starred-users
-    .starred-users-container
-    .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate
-    .starred-rate {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    outline: none;
-    font-size: 11px;
-    border: 1px solid #e5e7eb;
-    border-radius: 0.3rem;
-    padding: 0.3rem 0.75rem;
-    width: 56.53px;
-    height: 32px;
-    font-weight: 600;
-    line-height: 12px;
-    cursor: pointer;
-  }
-  .starred-users
-    .starred-users-container
-    .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate
-    .issue-rate {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    outline: none;
-    font-size: 11px;
-    margin-left: 22px;
-    border: 1px solid #e5e7eb;
-    border-radius: 0.3rem;
-    padding: 0.3rem 0.75rem;
-    width: 56.53px;
-    height: 32px;
-    font-weight: 600;
-    line-height: 12px;
-    cursor: pointer;
-  }
-  .starred-users
-    .starred-users-container
-    .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate
-    .rate-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 143.46px;
-    height: 24px;
-  }
-  .starred-users
-    .starred-users-container
-    .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate
-    .rate-content
-    .rate-text {
-    font-size: 11px;
-    margin-left: 22px;
-    line-height: 12px;
-    width: 143.46px;
-    height: 24px;
-    white-space: nowrap;
-    overflow-x: auto;
-  }
-  .starred-users
-    .starred-users-container
-    .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate
-    .rate-content
-    .rate-text::-webkit-scrollbar {
-    display: none;
-    scrollbar-width: none;
-  }
 }
