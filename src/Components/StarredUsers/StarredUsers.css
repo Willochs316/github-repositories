@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-.container {
+.starred-users {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,11 +16,11 @@
   overflow: hidden;
 }
 
-.container .container::-webkit-scrollbar {
+.starred-users .starred-users::-webkit-scrollbar {
   display: none;
 }
 
-.container .github-items-container {
+.starred-users .starred-users-container {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -32,7 +32,7 @@
   border: 0 solid;
 }
 
-.container .github-items-container .main-container {
+.starred-users .starred-users-container .starred-user-content {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -46,14 +46,21 @@
   padding: 0.75rem 0.5rem;
 }
 
-.container .github-items-container .main-container .profile-repo {
+.starred-users
+  .starred-users-container
+  .starred-user-content
+  .user-profile-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-basis: 100%;
 }
 
-.container .github-items-container .main-container .profile-repo .repo-image-container {
+.starred-users
+  .starred-users-container
+  .starred-user-content
+  .user-profile-container
+  .user-profile-image {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,7 +71,12 @@
   padding-top: 0.5rem;
 }
 
-.container .github-items-container .main-container .profile-repo .repo-image-container .repo-image {
+.starred-users
+  .starred-users-container
+  .starred-user-content
+  .user-profile-container
+  .user-profile-image
+  .user-icon {
   width: 100px;
   height: 100px;
   padding: 0.75rem;
@@ -72,7 +84,11 @@
   padding-top: 0.5rem;
 }
 
-.container .github-items-container .main-container .profile-repo .github-repo-details-container {
+.starred-users
+  .starred-users-container
+  .starred-user-content
+  .user-profile-container
+  .starred-user-information {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -84,22 +100,38 @@
   color: #e5e7eb;
 }
 
-.container .github-items-container .main-container .profile-repo .github-repo-details-container .repo-header-container {
+.starred-users
+  .starred-users-container
+  .starred-user-content
+  .user-profile-container
+  .starred-user-information
+  .starred-user-header-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  height: 25px;
+  /* height: 25px; */
   margin-top: 0.35rem;
   margin-bottom: 0.15rem;
 }
 
-.container .github-items-container .main-container .profile-repo .github-repo-details-container .repo-header-container .github-repo-header {
+.starred-users
+  .starred-users-container
+  .starred-user-content
+  .user-profile-container
+  .starred-user-information
+  .starred-user-header-container
+  .starred-user-header {
   font-size: 16px;
   color: #e5e7eb;
 }
 
-.container .github-items-container .main-container .profile-repo .github-repo-details-container .github-repo-contents {
+.starred-users
+  .starred-users-container
+  .starred-user-content
+  .user-profile-container
+  .starred-user-information
+  .starred-user-details {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -110,11 +142,22 @@
   width: 100%;
 }
 
-.container .github-items-container .main-container .profile-repo .github-repo-details-container .github-repo-contents .github-repo-title {
+.starred-users
+  .starred-users-container
+  .starred-user-content
+  .user-profile-container
+  .starred-user-information
+  .starred-user-details
+  .starred-user-detail-content {
   font-size: 12px;
 }
 
-.container .github-items-container .main-container .profile-repo .github-repo-details-container .github-repo-rate {
+.starred-users
+  .starred-users-container
+  .starred-user-content
+  .user-profile-container
+  .starred-user-information
+  .starred-user-rate {
   display: flex;
   align-items: center;
   align-items: center;
@@ -127,7 +170,13 @@
   border: 0;
 }
 
-.container .github-items-container .main-container .profile-repo .github-repo-details-container .github-repo-rate .rate-1 {
+.starred-users
+  .starred-users-container
+  .starred-user-content
+  .user-profile-container
+  .starred-user-information
+  .starred-user-rate
+  .starred-rate {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,7 +189,13 @@
   cursor: pointer;
 }
 
-.container .github-items-container .main-container .profile-repo .github-repo-details-container .github-repo-rate .rate-2 {
+.starred-users
+  .starred-users-container
+  .starred-user-content
+  .user-profile-container
+  .starred-user-information
+  .starred-user-rate
+  .issue-rate {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,7 +209,13 @@
   cursor: pointer;
 }
 
-.container .github-items-container .main-container .profile-repo .github-repo-details-container .github-repo-rate .rate-text-content {
+.starred-users
+  .starred-users-container
+  .starred-user-content
+  .user-profile-container
+  .starred-user-information
+  .starred-user-rate
+  .rate-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,7 +223,14 @@
   font-size: inherit;
 }
 
-.container .github-items-container .main-container .profile-repo .github-repo-details-container .github-repo-rate .rate-text-content .rate-text {
+.starred-users
+  .starred-users-container
+  .starred-user-content
+  .user-profile-container
+  .starred-user-information
+  .starred-user-rate
+  .rate-content
+  .rate-text {
   font-size: 14px;
   margin-left: 22px;
 }
@@ -174,7 +242,7 @@
     justify-content: center;
     overflow: hidden;
   }
-  .container {
+  .starred-users {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,10 +253,10 @@
     margin-top: 25px;
     margin: 0 auto 0 auto;
   }
-  .container .container::-webkit-scrollbar {
+  .starred-users .starred-users::-webkit-scrollbar {
     display: none;
   }
-  .container .github-items-container {
+  .starred-users .starred-users-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -199,7 +267,7 @@
     border: 0 solid;
     max-width: 321px;
   }
-  .container .github-items-container .main-container {
+  .starred-users .starred-users-container .starred-user-content {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -213,16 +281,27 @@
     max-width: 320px;
     height: 150px;
   }
-  .container .github-items-container .main-container .profile-repo {
+  .starred-users
+    .starred-users-container
+    .starred-user-content
+    .user-profile-container {
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 320px;
   }
-  .container .github-items-container .main-container .profile-repo .repo-image-container {
+  .starred-users
+    .starred-users-container
+    .starred-user-content
+    .user-profile-container
+    .user-profile-image {
     display: none;
   }
-  .container .github-items-container .main-container .profile-repo .github-repo-details-container {
+  .starred-users
+    .starred-users-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -233,7 +312,12 @@
     flex: 1 1 auto;
     color: #e5e7eb;
   }
-  .container .github-items-container .main-container .profile-repo .github-repo-details-container .repo-header-container {
+  .starred-users
+    .starred-users-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information
+    .starred-user-header-container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -243,15 +327,32 @@
     white-space: nowrap;
     overflow-x: auto;
   }
-  .container .github-items-container .main-container .profile-repo .github-repo-details-container .repo-header-container .repo-header-container::-webkit-scrollbar {
+  .starred-users
+    .starred-users-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information
+    .starred-user-header-container
+    .starred-user-header-container::-webkit-scrollbar {
     display: none;
     scrollbar-width: none;
   }
-  .container .github-items-container .main-container .profile-repo .github-repo-details-container .repo-header-container .github-repo-header {
+  .starred-users
+    .starred-users-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information
+    .starred-user-header-container
+    .starred-user-header {
     font-size: 14px;
     color: #e5e7eb;
   }
-  .container .github-items-container .main-container .profile-repo .github-repo-details-container .github-repo-contents {
+  .starred-users
+    .starred-users-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information
+    .starred-user-details {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -264,15 +365,32 @@
     white-space: nowrap;
     overflow-x: auto;
   }
-  .container .github-items-container .main-container .profile-repo .github-repo-details-container .github-repo-contents .github-repo-contents::-webkit-scrollbar {
+  .starred-users
+    .starred-users-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information
+    .starred-user-details
+    .starred-user-details::-webkit-scrollbar {
     display: none;
     scrollbar-width: none;
   }
-  .container .github-items-container .main-container .profile-repo .github-repo-details-container .github-repo-contents .github-repo-title {
+  .starred-users
+    .starred-users-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information
+    .starred-user-details
+    .starred-user-detail-content {
     font-size: 10px;
     font-size: 500;
   }
-  .container .github-items-container .main-container .profile-repo .github-repo-details-container .github-repo-rate {
+  .starred-users
+    .starred-users-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information
+    .starred-user-rate {
     display: flex;
     align-items: center;
     align-items: center;
@@ -284,7 +402,13 @@
     line-height: 1.25rem;
     border: 0;
   }
-  .container .github-items-container .main-container .profile-repo .github-repo-details-container .github-repo-rate .rate-1 {
+  .starred-users
+    .starred-users-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information
+    .starred-user-rate
+    .starred-rate {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -299,7 +423,13 @@
     line-height: 12px;
     cursor: pointer;
   }
-  .container .github-items-container .main-container .profile-repo .github-repo-details-container .github-repo-rate .rate-2 {
+  .starred-users
+    .starred-users-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information
+    .starred-user-rate
+    .issue-rate {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -315,14 +445,27 @@
     line-height: 12px;
     cursor: pointer;
   }
-  .container .github-items-container .main-container .profile-repo .github-repo-details-container .github-repo-rate .rate-text-content {
+  .starred-users
+    .starred-users-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information
+    .starred-user-rate
+    .rate-content {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 143.46px;
     height: 24px;
   }
-  .container .github-items-container .main-container .profile-repo .github-repo-details-container .github-repo-rate .rate-text-content .rate-text {
+  .starred-users
+    .starred-users-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information
+    .starred-user-rate
+    .rate-content
+    .rate-text {
     font-size: 11px;
     margin-left: 22px;
     line-height: 12px;
@@ -331,7 +474,14 @@
     white-space: nowrap;
     overflow-x: auto;
   }
-  .container .github-items-container .main-container .profile-repo .github-repo-details-container .github-repo-rate .rate-text-content .rate-text::-webkit-scrollbar {
+  .starred-users
+    .starred-users-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information
+    .starred-user-rate
+    .rate-content
+    .rate-text::-webkit-scrollbar {
     display: none;
     scrollbar-width: none;
   }

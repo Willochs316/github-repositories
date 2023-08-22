@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import UserItems from './Components/Users/UserItems';
 import axios from 'axios';
+import StarredUsers from './components/StarredUsers/StarredUsers';
 import './App.css';
 
 const App = () => {
@@ -40,7 +40,7 @@ const App = () => {
   };
 
   return (
-    <UserItems
+    <StarredUsers
       isLoading={isLoading}
       githubResponse={githubResponse}
       currentPage={currentPage}
