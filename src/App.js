@@ -43,7 +43,6 @@ const App = () => {
     <StarredUsers
       isLoading={isLoading}
       githubResponse={githubResponse}
-      currentPage={currentPage}
       totalPages={totalPages}
       loadMore={loadMore}
     />

@@ -5,7 +5,7 @@ import { Box } from '@mui/material';
 import SearchBar from '../SearchBar/SearchBar';
 import './StarredUsers.css';
 
-const StarredUsers = ({ githubResponse, currentPage, isLoading, loadMore }) => {
+const StarredUsers = ({ githubResponse, isLoading, loadMore }) => {
   const onNext = () => {
     loadMore?.();
   };
