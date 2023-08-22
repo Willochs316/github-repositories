@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import StarredUsers from './components/StarredUsers/StarredUsers';
+import StarredUsers from './component/StarredUsers/StarredUsers';
 import './App.css';
 
 const App = () => {
