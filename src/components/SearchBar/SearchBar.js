@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Button from "../Commons/Button";
-import UserIcons from "../Commons/Icons";
-import Input from "../Commons/Input";
+import Button from "components/Commons/Button";
+import UserIcons from "components/Commons/Icons";
+import Input from "components/Commons/Input";
 import { FaTimes } from "react-icons/fa";
 import "./Search.css";
 
