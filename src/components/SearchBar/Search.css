@@ -41,6 +41,12 @@
   cursor: pointer;
 }
 
+.input-container .clearBtn {
+  color: white;
+  margin-left: 44px;
+  cursor: pointer;
+}
+
 .githubResponseData {
   margin-top: 5px;
   width: 300px;
@@ -74,12 +80,6 @@ a {
 
 a:hover {
   background-color: steelblue;
-}
-
-.clearBtn {
-  color: white;
-  margin-left: 44px;
-  cursor: pointer;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -250,12 +250,6 @@ a:hover {
     line-height: 1.5;
     font-size: 16px;
     padding: 0 8px;
-    cursor: pointer;
-  }
-
-  .input-container .clearBtn {
-    color: white;
-    font-size: 24px;
     cursor: pointer;
   }
 
