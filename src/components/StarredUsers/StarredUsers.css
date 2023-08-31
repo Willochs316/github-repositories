@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  width: 100%;
   margin-top: 44px;
 }
 
@@ -15,7 +16,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-basis: 100%;
+  width: 100%;
   height: 100%;
   margin-top: 44px;
   overflow: hidden;
@@ -25,7 +26,7 @@
   display: none;
 }
 
-.starred-users .starred-users-container {
+.starred-users .starred-user-container {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -35,166 +36,28 @@
   border: 0 solid;
 }
 
-.starred-users .starred-users-container .starred-user-content {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 16px;
-  flex-basis: 100%;
-  border: 1px solid #e5e7eb;
-  border-radius: 6px;
-  border-width: 1px;
-  margin-bottom: 12px;
-  padding: 12px 8px;
-}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .progressBar {
+    margin-top: 44px;
+  }
 
-.starred-users
-  .starred-users-container
-  .starred-user-content
-  .user-profile-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 100%;
-  padding: 0 12px;
-}
+  .starred-users {
+    width: 100%;
+    height: 100%;
+    margin-top: 22px;
+    overflow: hidden;
+  }
 
-.starred-users
-  .starred-users-container
-  .starred-user-content
-  .user-profile-container
-  .user-icon {
-  width: 100px;
-  height: 100px;
-  padding-right: 12px;
-  object-fit: contain;
-}
+  .starred-users .starred-users::-webkit-scrollbar {
+    display: none;
+  }
 
-.starred-users
-  .starred-users-container
-  .starred-user-content
-  .user-profile-container
-  .starred-user-information {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 838px;
-  font-size: 16px;
-  flex: 1 1 auto;
-  color: #e5e7eb;
-  line-height: 1.4;
-}
-
-.starred-users
-  .starred-users-container
-  .starred-user-content
-  .user-profile-container
-  .starred-user-information
-  .starred-user-header {
-  width: 100%;
-  font-size: 16px;
-  font-weight: bolder;
-  color: #e5e7eb;
-}
-
-.starred-users
-  .starred-users-container
-  .starred-user-content
-  .user-profile-container
-  .starred-user-information
-  .starred-user-details {
-  font-size: 14px;
-  flex-wrap: wrap;
-  margin: 0;
-  margin-bottom: 3.2px;
-  margin-top: 1.6px;
-  width: 100%;
-}
-
-.starred-users
-  .starred-users-container
-  .starred-user-content
-  .user-profile-container
-  .starred-user-information
-  .starred-user-rate {
-  display: flex;
-  align-items: center;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 8px;
-  margin-top: 28.8px;
-  font-size: 16px;
-  line-height: 20px;
-  border: 0;
-}
-
-.starred-users
-  .starred-users-container
-  .starred-user-content
-  .user-profile-container
-  .starred-user-information
-  .starred-user-rate
-  .starred-rate {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  outline: none;
-  border: 1px solid #e5e7eb;
-  border-radius: 4.8px;
-  padding: 4.8px 12px;
-  width: 139.44px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.starred-users
-  .starred-users-container
-  .starred-user-content
-  .user-profile-container
-  .starred-user-information
-  .starred-user-rate
-  .issue-rate {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  outline: none;
-  font-size: 14px;
-  margin-left: 22px;
-  border: 1px solid #e5e7eb;
-  border-radius: 4.8px;
-  padding: 4.8px 12px;
-  width: 139.44px;
-  cursor: pointer;
-}
-
-.starred-users
-  .starred-users-container
-  .starred-user-content
-  .user-profile-container
-  .starred-user-information
-  .starred-user-rate
-  .rate-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 570.83px;
-  font-size: inherit;
-}
-
-.starred-users
-  .starred-users-container
-  .starred-user-content
-  .user-profile-container
-  .starred-user-information
-  .starred-user-rate
-  .rate-content
-  .rate-text {
-  font-size: 14px;
-  margin-left: 22px;
-}
-
-@media only screen and (max-width: 375px) {
+  .starred-users .starred-user-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto 0 auto;
+    border: 0 solid;
+  }
 }

@@ -1,0 +1,286 @@
+.starred-user-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  border-width: 1px;
+  margin-bottom: 12px;
+  padding: 12px 8px;
+}
+
+.starred-user-content .user-profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 12px;
+}
+
+.starred-user-content .user-profile-container .user-icon {
+  width: 100px;
+  height: 100px;
+  padding-right: 12px;
+  object-fit: contain;
+}
+
+.starred-user-content .user-profile-container .starred-user-information {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 838px;
+  font-size: 16px;
+  flex: 1 1 auto;
+  color: #e5e7eb;
+  line-height: 1.4;
+}
+
+.starred-user-content
+  .user-profile-container
+  .starred-user-information
+  .starred-user-header {
+  width: 100%;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #e5e7eb;
+}
+
+.starred-user-content
+  .user-profile-container
+  .starred-user-information
+  .starred-user-details {
+  font-size: 14px;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 3.2px;
+  margin-top: 1.6px;
+  width: 100%;
+}
+
+.starred-user-content
+  .user-profile-container
+  .starred-user-information
+  .starred-user-rate {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 8px;
+  margin-top: 28.8px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 0;
+}
+
+.starred-user-content
+  .user-profile-container
+  .starred-user-information
+  .starred-user-rate
+  .starred-rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 4.8px;
+  padding: 4.8px 12px;
+  width: 139.44px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.starred-user-content
+  .user-profile-container
+  .starred-user-information
+  .starred-user-rate
+  .issue-rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  font-size: 14px;
+  margin-left: 22px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4.8px;
+  padding: 4.8px 12px;
+  width: 139.44px;
+  cursor: pointer;
+}
+
+.starred-user-content
+  .user-profile-container
+  .starred-user-information
+  .starred-user-rate
+  .rate-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 570.83px;
+  font-size: inherit;
+}
+
+.starred-user-content
+  .user-profile-container
+  .starred-user-information
+  .starred-user-rate
+  .rate-content
+  .rate-text {
+  font-size: 14px;
+  margin-left: 22px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .starred-users .starred-user-container .starred-user-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    max-width: 320px;
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    border-width: 1px;
+    margin-bottom: 14px;
+    padding: 12px 8px;
+  }
+
+  .starred-users
+    .starred-user-container
+    .starred-user-content
+    .user-profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 12px;
+  }
+
+  .starred-users
+    .starred-user-container
+    .starred-user-content
+    .user-profile-container
+    .user-icon {
+    display: none;
+  }
+
+  .starred-users
+    .starred-user-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information {
+    width: 100%;
+    font-size: 14px;
+    flex: 1 1 auto;
+    color: #e5e7eb;
+    line-height: 1.4;
+  }
+
+  .starred-users
+    .starred-user-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information
+    .starred-user-header {
+    width: 100%;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #e5e7eb;
+  }
+
+  .starred-users
+    .starred-user-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information
+    .starred-user-details {
+    display: none;
+  }
+
+  .starred-users
+    .starred-user-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information
+    .starred-user-rate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 8px;
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 1.4;
+    border: 0;
+  }
+
+  .starred-users
+    .starred-user-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information
+    .starred-user-rate
+    .starred-rate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    font-size: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4.8px;
+    padding: 4.8px 8px;
+    width: 112px;
+    cursor: pointer;
+  }
+
+  .starred-users
+    .starred-user-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information
+    .starred-user-rate
+    .issue-rate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    font-size: 12px;
+    margin-left: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4.8px;
+    padding: 4.8px 8px;
+    width: 112px;
+    cursor: pointer;
+  }
+
+  .starred-users
+    .starred-user-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information
+    .starred-user-rate
+    .rate-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .starred-users
+    .starred-user-container
+    .starred-user-content
+    .user-profile-container
+    .starred-user-information
+    .starred-user-rate
+    .rate-content
+    .rate-text {
+    font-size: 12px;
+    margin-left: 22px;
+  }
+}
