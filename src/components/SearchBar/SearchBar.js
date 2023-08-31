@@ -28,30 +28,30 @@ const SearchBar = ({ githubResponse }) => {
     setwordEntered("");
   };
   return (
-    <div className="search-container">
-      <div className="input-container">
+    <section className="search-section">
+      <div className="search-input-section">
         <Input
-          className="em-input"
+          className="search-input"
           value={wordEntered}
           onChange={handleFilteredItems}
           placeholder="Search...."
         />
         {filteredItems.length === 0 ? (
-          <Button className="input-button" title="Search" type="submit" />
+          <Button className="search-button" title="Search" type="submit" />
         ) : (
           <UserIcons
             icons={FaTimes}
-            className="clearBtn"
+            className="clear-button"
             onClick={clearInput}
           />
         )}
       </div>
 
       {filteredItems.length !== 0 && (
-        <div className="githubResponseData">
+        <div className="search-results">
           {filteredItems.slice(0, 5).map((item) => (
             <a
-              className="starred-user-items"
+              className="search-result-item"
               href={item.html_url}
               target="true"
               key={item.id}
@@ -61,7 +61,7 @@ const SearchBar = ({ githubResponse }) => {
           ))}
         </div>
       )}
-    </div>
+    </section>
   );
 };
 

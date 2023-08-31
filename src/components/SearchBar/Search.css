@@ -1,4 +1,4 @@
-.input-container {
+.search-input-section {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -12,7 +12,7 @@
   line-height: 1.5;
 }
 
-.input-container .em-input {
+.search-input-section .search-input {
   font-size: 16px;
   font-weight: 300;
   width: 100%;
@@ -26,7 +26,7 @@
   cursor: text;
 }
 
-.input-container .input-button {
+.search-input-section .search-button {
   outline: 0;
   text-align: center;
   border: none;
@@ -41,13 +41,13 @@
   cursor: pointer;
 }
 
-.input-container .clearBtn {
+.search-input-section .clear-button {
   color: white;
   margin-left: 44px;
   cursor: pointer;
 }
 
-.githubResponseData {
+.search-results {
   margin-top: 5px;
   width: 300px;
   height: 200px;
@@ -57,11 +57,11 @@
   overflow-y: auto;
 }
 
-.githubResponseData::-webkit-scrollbar {
+.search-results::-webkit-scrollbar {
   display: none;
 }
 
-.githubResponseData .starred-user-items {
+.search-results .search-result-item {
   width: 100%;
   height: 40px;
   display: flex;
@@ -70,7 +70,7 @@
   font-size: 14px;
 }
 
-.starred-user-items p {
+.search-result-item p {
   margin-left: 10px;
 }
 
@@ -83,7 +83,7 @@ a:hover {
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .input-container {
+  .search-input-section {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -97,7 +97,7 @@ a:hover {
     font-size: 14px;
     line-height: 1.5;
   }
-  .input-container .em-input {
+  .search-input-section .search-input {
     font-size: 16px;
     font-weight: 300;
     width: 100%;
@@ -109,7 +109,7 @@ a:hover {
     color: #e5e7eb;
     cursor: text;
   }
-  .input-container .input-button {
+  .search-input-section .search-button {
     outline: 0;
     text-align: center;
     border: none;
@@ -123,7 +123,7 @@ a:hover {
     padding: 0 8px;
     cursor: pointer;
   }
-  .githubResponseData {
+  .search-results {
     margin-top: 5px;
     width: 280px;
     height: 200px;
@@ -132,7 +132,7 @@ a:hover {
     overflow: hidden;
     overflow-y: auto;
   }
-  .githubResponseData::-webkit-scrollbar {
+  .search-results::-webkit-scrollbar {
     display: none;
   }
 
@@ -147,7 +147,7 @@ a:hover {
 /* iPads, Tablets. */
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .input-container {
+  .search-input-section {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -161,7 +161,7 @@ a:hover {
     font-size: 16px;
     line-height: 1.5;
   }
-  .input-container .em-input {
+  .search-input-section .search-input {
     font-size: 16px;
     font-weight: 300;
     width: 100%;
@@ -173,7 +173,7 @@ a:hover {
     color: #e5e7eb;
     cursor: text;
   }
-  .input-container .input-button {
+  .search-input-section .search-button {
     outline: 0;
     text-align: center;
     border: none;
@@ -188,7 +188,7 @@ a:hover {
     cursor: pointer;
   }
 
-  .githubResponseData {
+  .search-results {
     margin-top: 5px;
     width: 280px;
     height: 200px;
@@ -197,7 +197,7 @@ a:hover {
     overflow: hidden;
     overflow-y: auto;
   }
-  .githubResponseData::-webkit-scrollbar {
+  .search-results::-webkit-scrollbar {
     display: none;
   }
 
@@ -212,7 +212,7 @@ a:hover {
 /* Small screens, laptops. */
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .input-container {
+  .search-input-section {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -226,7 +226,7 @@ a:hover {
     font-size: 16px;
     line-height: 1.5;
   }
-  .input-container .em-input {
+  .search-input-section .search-input {
     font-size: 16px;
     font-weight: 300;
     width: 100%;
@@ -238,7 +238,7 @@ a:hover {
     color: #e5e7eb;
     cursor: text;
   }
-  .input-container .input-button {
+  .search-input-section .search-button {
     outline: 0;
     text-align: center;
     border: none;
@@ -253,7 +253,7 @@ a:hover {
     cursor: pointer;
   }
 
-  .githubResponseData {
+  .search-results {
     margin-top: 5px;
     width: 280px;
     height: 200px;
@@ -262,7 +262,7 @@ a:hover {
     overflow: hidden;
     overflow-y: auto;
   }
-  .githubResponseData::-webkit-scrollbar {
+  .search-results::-webkit-scrollbar {
     display: none;
   }
 

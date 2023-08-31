@@ -20,25 +20,26 @@ const StarredUsers = ({ githubResponse, isLoading, isError, loadMore }) => {
       <CircularProgress />
     </Box>
   ) : (
-    <InfiniteScroll
-      dataLength={githubResponse?.items}
-      next={onNext}
-      hasMore={githubResponse?.incomplete_results}
-      loader={
-        <Box className="progressBar">
-          <CircularProgress />
-        </Box>
-      }
-    >
-      <div className="starred-users">
-        <SearchBar githubResponse={githubResponse} />
-        <div className="starred-user-container">
+    <div className="starred-users">
+      <SearchBar githubResponse={githubResponse} />
+
+      <InfiniteScroll
+        dataLength={githubResponse?.items}
+        next={onNext}
+        hasMore={githubResponse?.incomplete_results}
+        loader={
+          <Box className="progressBar">
+            <CircularProgress />
+          </Box>
+        }
+      >
+        <div className="starred-user-list">
           {githubResponse?.items?.map((item) => (
-            <StarredUser item={item} />
+            <StarredUser item={item} key={item.id} />
           ))}
         </div>
-      </div>
-    </InfiniteScroll>
+      </InfiniteScroll>
+    </div>
   );
 };
 

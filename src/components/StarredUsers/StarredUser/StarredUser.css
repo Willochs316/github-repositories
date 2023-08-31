@@ -12,7 +12,7 @@
   padding: 12px 8px;
 }
 
-.starred-user-content .user-profile-container {
+.starred-user-content .user-profile {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,14 +20,14 @@
   padding: 0 12px;
 }
 
-.starred-user-content .user-profile-container .user-icon {
+.starred-user-content .user-profile .user-avatar {
   width: 100px;
   height: 100px;
   padding-right: 12px;
   object-fit: contain;
 }
 
-.starred-user-content .user-profile-container .starred-user-information {
+.starred-user-content .user-profile .user-profile-info {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -39,10 +39,7 @@
   line-height: 1.4;
 }
 
-.starred-user-content
-  .user-profile-container
-  .starred-user-information
-  .starred-user-header {
+.starred-user-content .user-profile .user-profile-info .user-profile-name {
   width: 100%;
   font-size: 16px;
   font-weight: bolder;
@@ -50,9 +47,9 @@
 }
 
 .starred-user-content
-  .user-profile-container
-  .starred-user-information
-  .starred-user-details {
+  .user-profile
+  .user-profile-info
+  .user-profile-description {
   font-size: 14px;
   flex-wrap: wrap;
   margin: 0;
@@ -61,10 +58,7 @@
   width: 100%;
 }
 
-.starred-user-content
-  .user-profile-container
-  .starred-user-information
-  .starred-user-rate {
+.starred-user-content .user-profile .user-profile-info .user-profile-ratings {
   display: flex;
   align-items: center;
   align-items: center;
@@ -78,10 +72,10 @@
 }
 
 .starred-user-content
-  .user-profile-container
-  .starred-user-information
-  .starred-user-rate
-  .starred-rate {
+  .user-profile
+  .user-profile-info
+  .user-profile-ratings
+  .user-profile-stars {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,10 +89,10 @@
 }
 
 .starred-user-content
-  .user-profile-container
-  .starred-user-information
-  .starred-user-rate
-  .issue-rate {
+  .user-profile
+  .user-profile-info
+  .user-profile-ratings
+  .user-profile-issues {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,10 +107,10 @@
 }
 
 .starred-user-content
-  .user-profile-container
-  .starred-user-information
-  .starred-user-rate
-  .rate-content {
+  .user-profile
+  .user-profile-info
+  .user-profile-ratings
+  .user-profile-submission {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,17 +119,17 @@
 }
 
 .starred-user-content
-  .user-profile-container
-  .starred-user-information
-  .starred-user-rate
-  .rate-content
-  .rate-text {
+  .user-profile
+  .user-profile-info
+  .user-profile-ratings
+  .user-profile-submission
+  .user-submission-text {
   font-size: 14px;
   margin-left: 22px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .starred-users .starred-user-container .starred-user-content {
+  .starred-users .starred-user-list .starred-user-content {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -150,10 +144,7 @@
     padding: 12px 8px;
   }
 
-  .starred-users
-    .starred-user-container
-    .starred-user-content
-    .user-profile-container {
+  .starred-users .starred-user-list .starred-user-content .user-profile {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,18 +153,18 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .user-icon {
+    .user-profile
+    .user-avatar {
     display: none;
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information {
+    .user-profile
+    .user-profile-info {
     width: 100%;
     font-size: 14px;
     flex: 1 1 auto;
@@ -182,11 +173,11 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-header {
+    .user-profile
+    .user-profile-info
+    .user-profile-name {
     width: 100%;
     font-size: 14px;
     font-weight: bolder;
@@ -194,20 +185,20 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-details {
+    .user-profile
+    .user-profile-info
+    .user-profile-description {
     display: none;
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate {
+    .user-profile
+    .user-profile-info
+    .user-profile-ratings {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -220,12 +211,12 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate
-    .starred-rate {
+    .user-profile
+    .user-profile-info
+    .user-profile-ratings
+    .user-profile-stars {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -239,12 +230,12 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate
-    .issue-rate {
+    .user-profile
+    .user-profile-info
+    .user-profile-ratings
+    .user-profile-issues {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -259,12 +250,12 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate
-    .rate-content {
+    .user-profile
+    .user-profile-info
+    .user-profile-ratings
+    .user-profile-submission {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -273,13 +264,13 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate
-    .rate-content
-    .rate-text {
+    .user-profile
+    .user-profile-info
+    .user-profile-ratings
+    .user-profile-submission
+    .user-submission-text {
     font-size: 12px;
     margin-left: 22px;
   }
@@ -288,7 +279,7 @@
 /* iPads, Tablets. */
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .starred-users .starred-user-container .starred-user-content {
+  .starred-users .starred-user-list .starred-user-content {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -303,10 +294,7 @@
     padding: 12px 8px;
   }
 
-  .starred-users
-    .starred-user-container
-    .starred-user-content
-    .user-profile-container {
+  .starred-users .starred-user-list .starred-user-content .user-profile {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -315,18 +303,18 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .user-icon {
+    .user-profile
+    .user-avatar {
     display: none;
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information {
+    .user-profile
+    .user-profile-info {
     width: 100%;
     font-size: 15px;
     flex: 1 1 auto;
@@ -335,11 +323,11 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-header {
+    .user-profile
+    .user-profile-info
+    .user-profile-name {
     width: 100%;
     font-size: 15px;
     font-weight: bolder;
@@ -347,20 +335,20 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-details {
+    .user-profile
+    .user-profile-info
+    .user-profile-description {
     display: none;
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate {
+    .user-profile
+    .user-profile-info
+    .user-profile-ratings {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -373,12 +361,12 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate
-    .starred-rate {
+    .user-profile
+    .user-profile-info
+    .user-profile-ratings
+    .user-profile-stars {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -392,12 +380,12 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate
-    .issue-rate {
+    .user-profile
+    .user-profile-info
+    .user-profile-ratings
+    .user-profile-issues {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -412,12 +400,12 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate
-    .rate-content {
+    .user-profile
+    .user-profile-info
+    .user-profile-ratings
+    .user-profile-submission {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -426,13 +414,13 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate
-    .rate-content
-    .rate-text {
+    .user-profile
+    .user-profile-info
+    .user-profile-ratings
+    .user-profile-submission
+    .user-submission-text {
     font-size: 13px;
     margin-left: 22px;
   }
@@ -441,7 +429,7 @@
 /* Small screens, laptops. */
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .starred-users .starred-user-container .starred-user-content {
+  .starred-users .starred-user-list .starred-user-content {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -456,10 +444,7 @@
     padding: 12px 8px;
   }
 
-  .starred-users
-    .starred-user-container
-    .starred-user-content
-    .user-profile-container {
+  .starred-users .starred-user-list .starred-user-content .user-profile {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -468,10 +453,10 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .user-icon {
+    .user-profile
+    .user-avatar {
     width: 100px;
     height: 100px;
     padding-right: 12px;
@@ -479,10 +464,10 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information {
+    .user-profile
+    .user-profile-info {
     width: 100%;
     font-size: 15px;
     flex: 1 1 auto;
@@ -491,11 +476,11 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-header {
+    .user-profile
+    .user-profile-info
+    .user-profile-name {
     width: 100%;
     font-size: 15px;
     font-weight: bolder;
@@ -503,20 +488,20 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-details {
+    .user-profile
+    .user-profile-info
+    .user-profile-description {
     display: none;
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate {
+    .user-profile
+    .user-profile-info
+    .user-profile-ratings {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -529,12 +514,12 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate
-    .starred-rate {
+    .user-profile
+    .user-profile-info
+    .user-profile-ratings
+    .user-profile-stars {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -548,12 +533,12 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate
-    .issue-rate {
+    .user-profile
+    .user-profile-info
+    .user-profile-ratings
+    .user-profile-issues {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -568,12 +553,12 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate
-    .rate-content {
+    .user-profile
+    .user-profile-info
+    .user-profile-ratings
+    .user-profile-submission {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -582,13 +567,13 @@
   }
 
   .starred-users
-    .starred-user-container
+    .starred-user-list
     .starred-user-content
-    .user-profile-container
-    .starred-user-information
-    .starred-user-rate
-    .rate-content
-    .rate-text {
+    .user-profile
+    .user-profile-info
+    .user-profile-ratings
+    .user-profile-submission
+    .user-submission-text {
     font-size: 13px;
     margin-left: 22px;
   }

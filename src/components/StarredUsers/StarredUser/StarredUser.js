@@ -4,28 +4,32 @@ import "./StarredUser.css";
 const StarredUser = ({ item }) => {
   return (
     <div className="starred-user-content" key={item.id}>
-      <div className="user-profile-container">
+      <div className="user-profile">
         <img
           src={item.owner.avatar_url}
-          className="user-icon"
+          className="user-avatar"
           alt={item.owner.name}
         />
 
-        <div className="starred-user-information">
-          <h2 className="starred-user-header">{item.full_name}</h2>
+        <div className="user-profile-info">
+          <h2 className="user-profile-name">{item.full_name}</h2>
 
-          <p className="starred-user-details">
+          <p className="user-profile-description">
             {item.description}
             <span> {item.url}</span>
           </p>
 
-          <div className="starred-user-rate">
-            <div className="starred-rate">Stars: {item.stargazers_count}k</div>
+          <div className="user-profile-ratings">
+            <div className="user-profile-stars">
+              Stars: {item.stargazers_count}k
+            </div>
 
-            <div className="issue-rate">Issues: {item.open_issues_count}k</div>
+            <div className="user-profile-issues">
+              Issues: {item.open_issues_count}k
+            </div>
 
-            <div className="rate-content">
-              <span className="rate-text">
+            <div className="user-profile-submission">
+              <span className="user-submission-text">
                 Submitted 30 days ago by {item.name}
               </span>
             </div>
