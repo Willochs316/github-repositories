@@ -1,7 +1,7 @@
 import React from "react";
-import "./StarredUser.css";
+import "./GithubStarredUser.css";
 
-const StarredUser = ({ item }) => {
+const GithubStarredUser = ({ item }) => {
   return (
     <div className="starred-user-content" key={item.id}>
       <div className="user-profile">
@@ -40,4 +40,4 @@ const StarredUser = ({ item }) => {
   );
 };
 
-export default StarredUser;
+export default GithubStarredUser;

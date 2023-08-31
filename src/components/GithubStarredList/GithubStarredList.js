@@ -2,11 +2,16 @@ import React from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import CircularProgress from "@mui/material/CircularProgress";
 import { Box } from "@mui/material";
-import SearchBar from "../SearchBar/SearchBar";
-import StarredUser from "./StarredUser/StarredUser";
-import "./StarredUsers.css";
+import SearchBar from "components/SearchBar/SearchBar";
+import GithubStarredUser from "components/GithubStarredList/GithubStarredUser/GithubStarredUser";
+import "./GithubStarredList.css";
 
-const StarredUsers = ({ githubResponse, isLoading, isError, loadMore }) => {
+const GithubStarredList = ({
+  githubResponse,
+  isLoading,
+  isError,
+  loadMore,
+}) => {
   const onNext = () => {
     loadMore?.();
   };
@@ -35,7 +40,7 @@ const StarredUsers = ({ githubResponse, isLoading, isError, loadMore }) => {
       >
         <div className="starred-user-list">
           {githubResponse?.items?.map((item) => (
-            <StarredUser item={item} key={item.id} />
+            <GithubStarredUser item={item} key={item.id} />
           ))}
         </div>
       </InfiniteScroll>
@@ -43,4 +48,4 @@ const StarredUsers = ({ githubResponse, isLoading, isError, loadMore }) => {
   );
 };
 
-export default StarredUsers;
+export default GithubStarredList;
