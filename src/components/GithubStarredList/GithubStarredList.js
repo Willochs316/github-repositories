@@ -6,21 +6,12 @@ import SearchBar from "components/SearchBar/SearchBar";
 import GithubStarredUser from "components/GithubStarredList/GithubStarredUser/GithubStarredUser";
 import "./GithubStarredList.css";
 
-const GithubStarredList = ({
-  githubResponse,
-  isLoading,
-  isError,
-  loadMore,
-}) => {
+const GithubStarredList = ({ githubResponse, isLoading, loadMore }) => {
   const onNext = () => {
     loadMore?.();
   };
 
-  return isError ? (
-    <div className="error-message">
-      Oops! An error occurred. Please try again later.
-    </div>
-  ) : isLoading ? (
+  return isLoading ? (
     <Box className="progressBar">
       <CircularProgress />
     </Box>

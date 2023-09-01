@@ -30,7 +30,7 @@ const App = () => {
       fetchItems();
     } catch (error) {
       setIsError(true);
-      console.log(error);
+      console.log(error.message);
     }
   }, [currentPage]);
 
@@ -39,12 +39,13 @@ const App = () => {
   };
 
   return (
-    <GithubStarredList
-      isLoading={isLoading}
-      isError={isError}
-      githubResponse={githubResponse}
-      loadMore={loadMore}
-    />
+    !isError && (
+      <GithubStarredList
+        isLoading={isLoading}
+        githubResponse={githubResponse}
+        loadMore={loadMore}
+      />
+    )
   );
 };
 
